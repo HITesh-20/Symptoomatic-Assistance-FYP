@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/style.css">
+
+    <title>disease predictive system</title>
+</head>
+
+<body>
+
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+                <img src="/static/styles/sa.jpeg" alt="logo">
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#predict">Prediction</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+        </div>
+    </nav>
+
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <h1 class="text-big">SYMPTOMATIC ASSISTANCE</h1>
+                <p class="text-small">A Healthy body equals a Healthy mind, And a Healthy mind takes care of Business
+                </p>
+            </div>
+            <div class="secondhalf">
+
+            </div>
+        </div>
+
+    </section>
+    <section class="section" id="home">
+        <div class="para">
+            <p class="sectionTag text-big">The road to Health is paved with good intestines.</p>
+            <p class="sectionSubTag text-small">Health care or healthcare is the preservation of mental and physical health by preventing or treating illnesses through services offered by the health profession and its staff. Health care includes all reasonable and necessary medical aid,
+                medical examinations, medical treatments, medical diagnoses, medical evaluations and medical services. The right to health care is considered one of human rights with international human rights law as well as social security.A healthy
+                person can think normally and act instantly according to the given situation. Healthy body is free from diseases and it doesn’t leads to bulky body. Healthy mind is capable, positive and free thinking mind. Feeling of hunger comes from
+                stem of brain. The part responsible for hunger and other basic motivated states is called as hypothalamus. It has sensors that literally taste the blood. They detect levels of fat, protein and glucose, as well as blood pressure and temperature.
+                The hypothalamus gathers this data and combines it with sensory signals that percolate in through other systems in the brain, fullness in the gut, the feel and taste and smell of food, the sight of food, even the time of day and other
+                surrounding circumstances.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?medical,doctor" alt="about image" class="imgfluid">
+        </div>
+    </section>
+    <section class="mysec" id="predict">
+        <div class="container">
+            <h1 class="form-head">ENTER THE DETAILS</h1>
+
+            <form class="formy" method="POST" action="/predict">
+                <input type="number" name="a" placeholder="Enter your age">
+                <input type="number" name="b" placeholder="Number of cigarette consumed per day">
+                <input type="number" name="c" placeholder="Cholesterol">
+                <input type="number" name="d" placeholder="Systolic BP">
+                <input type="number" name="e" placeholder="Diastolic BP">
+                <input type="number" name="f" placeholder="BMI">
+                <input type="number" name="g" placeholder="Heart Rate">
+                <input type="number" name="h" placeholder="Glucose">
+
+                <button type="submit" class="sub">SUBMIT</button>
+            </form>
+
+        </div>
+
+
+        <p class="prediction">{{pred}}</p>
+    </section>
+    <section class="about" id="about">
+        <h1 class="text-center">ABOUT</h1>
+        <div class="para">
+            <p class="sectionSubTag text-small">The website will aim that users can get to know the idea from which disease he/she may be suffering. We will develop a website for taking inputs and give the predicted disease. We have the dataset by which we will predict the disease from
+                the symptom's user is observing in him/her. For that prediction we will apply a few machine learning models and pick the best fitted algorithm according to accuracy. Anyone can do it by sitting at their home and can get the list of doctors
+                to whom they can consult. For this doctors list, we will do web scraping by beautiful soap. This project will make it easy for the user to consult the doctors of specific diseases otherwise users have to move from one doctor to another.In
+                this website i.e. Symptomatic Assistance Website. This project involves both Machine Learning and Web Development Technologies. The project shows the prediction of the diseases which will be predicted by the symptoms entered by the user.
+                The data used to predict the disease contains 133 symptoms and 41 diseases. To predict the appropriate disease, first, we will clean the data, then pre-process the data, do some analysis, train the model and apply that algorithm which
+                gives the best accuracy for the machine learning model.
+            </p>
+        </div>
+        <div class="thumbnails">
+            <img src="https://source.unsplash.com/900x900/?medical facilities,doctors" alt="services image" class="imgfluid">
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
